@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre tu Amigo Secreto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Descubre tu Amigo Secreto</h1>
+        <form id="sorteoForm">
+            <input type="text" id="nombreConsulta" placeholder="Ingresa tu nombre" required>
+            <button type="submit">Descubrir Amigo Secreto</button>
+        </form>
+        <div id="resultado" style="display:none;">
+            <h2 id="amigoSecretoResultado"></h2>
+            <p id="gustosResultado"></p>
+            <p id="noGustosResultado"></p>
+        </div>
+    </div>
+
+    <!-- Cargar el archivo externo de JavaScript -->
+    <script type="module" src="sorteo.js"></script>
+</body>
+</html>
