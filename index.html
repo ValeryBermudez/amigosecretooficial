@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descubre tu Amigo Secreto</title>
+    <title>Sorteo Amigo Secreto</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Descubre tu Amigo Secreto</h1>
-        <form id="sorteoForm">
-            <input type="text" id="nombreConsulta" placeholder="Ingresa tu nombre" required>
-            <button type="submit">Descubrir Amigo Secreto</button>
-        </form>
-        <div id="resultado" style="display:none;">
-            <h2 id="amigoSecretoResultado"></h2>
-            <p id="gustosResultado"></p>
-            <p id="noGustosResultado"></p>
+    <div id="container">
+        <h1>Sorteo Amigo Secreto</h1>
+
+        <div id="form-container">
+            <h3>Vamos a jugar amigo secreto, tomale captura de pantalla para que no hayan confusiones.</h3>
+            <label for="nombre">Ingresa tu nombre con el que te registraste:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+            <button id="descubrirBtn">Descubrir Amigo Secreto</button>
+            <p id="resultado"></p>
+            <p id="error"></p>
         </div>
     </div>
 
-    <!-- Cargar el archivo externo de JavaScript -->
-    <script type="module" src="sorteo.js"></script>
+    <!-- Firebase App (necesario siempre) -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app-compat.js"></script>
+    <!-- Firebase Database -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-database-compat.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>

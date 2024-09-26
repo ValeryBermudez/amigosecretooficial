@@ -13,7 +13,7 @@ body {
     color: rgb(199, 73, 122);
 }
 
-.container {
+#container {
     text-align: center;
     background-color: rgb(255, 203, 220); /* Fondo oscuro semi-transparente para texto legible */
     padding: 20px;
@@ -22,7 +22,7 @@ body {
     width: 100%;
 }
 
-.form-group {
+#form-container {
     margin-bottom: 20px;
 }
 
@@ -38,7 +38,6 @@ input, textarea {
     border-radius: 5px;
     border: 1px solid #ddd;
     font-family: Arial, sans-serif;
-
 }
 
 button {
@@ -52,7 +51,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff435c;
+    background-color: #ff2e44;
 }
 
 textarea {
